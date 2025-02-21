@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isLoggedIn) {
         // User is logged in: Remove Login button, keep Profile & Logout
+        if (loginButton) loginButton.parentElement.remove();
         if (profileIcon) profileIcon.remove();
         if (logoutButton) logoutButton.parentElement.remove();
     } else {
         // User is NOT logged in: Remove Profile & Logout, keep Login button
-        if (loginButton) loginButton.parentElement.remove();
+        if (profileIcon) profileIcon.remove();
+        if (logoutButton) logoutButton.parentElement.remove();   
     }
 
     // Search Function
