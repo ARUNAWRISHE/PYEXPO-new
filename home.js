@@ -19,3 +19,17 @@ function search() {
     alert("Searching for: " + searchQuery);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product").forEach(product => {
+        product.addEventListener("click", function () {
+            // Assuming each product has a data attribute for the farmer detail page URL
+            let farmerDetailUrl = this.getAttribute("data-farmer-url");
+            if (farmerDetailUrl) {
+                window.location.href = farmerDetailUrl;
+            } else {
+                alert("Farmer details not available!");
+            }
+        });
+    });
+});
+

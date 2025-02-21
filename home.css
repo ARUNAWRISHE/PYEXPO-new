@@ -224,7 +224,40 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Footer */
+cart-item:hover {
+    transform: scale(1.02);
+}
+
+.product-container-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+}
+.product-container-product:hover {
+    transform: scale(1.02);
+}
+.product-container-product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.product-container .product {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.product-container .product:hover {
+    transform: scale(1.02);
+}
+
 
 
 /* Footer */
