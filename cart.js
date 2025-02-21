@@ -18,5 +18,9 @@ function goToProductPage(url) {
 }
 
 function buyAll() {
-    alert("Proceeding to checkout with total amount: rupees" + document.getElementById('total-price').textContent);
+    const totalPrice = document.getElementById('total-price').textContent;
+    alert("Proceeding to checkout with total amount: rupees " + totalPrice);
+    
+    // Redirect to buy-list.html after alert
+    window.location.href = "buy-detail.html";
 }
