@@ -11,23 +11,26 @@
     <!-- Navigation Bar -->
     <header>
         <div class="logo">Xavier's Market</div>
-        <nav class="navigate">
-            <ul>
-                <input type="text" id="search-input" placeholder="Search...">
-                <button onclick="search()">Search</button>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#SHOP">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li>
-                    <a href="profile.html">
-                        <img src="profile-icon.jpg" alt="Profile" class="profile-icon">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="navigate">
+                <ul>
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button onclick="search()">Search</button>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#SHOP">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li>
+                        <a href="profile.html">
+                            <img src="profile-icon.jpg" alt="Profile" class="profile-icon">
+                        </a>
+                    </li>
+                    <li><a href="login.html" onclick="loginUser()" class="btn login">Login/Sign Up</a></li>
+                    <li><a href="#" onclick="logoutUser()" class="btn logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <script src="home.js"></script>

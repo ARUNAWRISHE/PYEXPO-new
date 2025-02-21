@@ -110,7 +110,7 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 80px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #d5f955, #f8d64d);
     color: white;
     animation: fadeIn 1.5s ease-in-out;
 }
