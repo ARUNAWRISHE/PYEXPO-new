@@ -82,7 +82,7 @@ nav ul li a:hover {
 .pop {
     text-align: center;
     padding: 80px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #56df49, #287c0e);
     color: white;
     animation: fadeIn 1.5s ease-in-out;
 }

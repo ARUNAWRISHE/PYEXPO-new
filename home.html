@@ -10,14 +10,28 @@
 
     <!-- Navigation Bar -->
     <header>
+        <div class="menu-icon" onclick="openMenu()">☰</div>
+
+    <!-- Left Sidebar Menu -->
+    <div class="side-menu" id="sideMenu">
+        <span class="close-menu" onclick="closeMenu()">✖</span>
+        <a href="agro-ai.html">🌿 Agro-AI</a>
+        <a href="chat.html">💬 Real-time Chat</a>
+        <a href="farmers.html">🚜 Nearby Farmers Listing</a>
+    </div>
+
+    <!-- Background overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+        
         <div class="logo">Xavier's Market</div>
             <nav class="navigate">
                 <ul>
+
                     <input type="text" id="search-input" placeholder="Search...">
                     <button onclick="search()">Search</button>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="#SHOP">Shop</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="frontpage.html">About US</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="cart.html">Cart</a></li>
@@ -41,18 +55,45 @@
         <p>Shop the latest trends at unbeatable prices</p>
         <a href="#" class="shop-btn">Shop Now</a>
     </section>
-    <div class="slider">
-        <div class="slide-track">
-            <img src="egg.jpg" alt="egg" width="500px" height="500px">
-            <img src="ghee.jpg" alt="ghee"  loading="lazy">
-            <!-- Duplicate slides for seamless effect -->
-            <img src="egg.jpg" alt="egg" width="500px" height="500px">
-            <img src="ghee.jpg" alt="ghee"  loading="lazy">
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide"><img src="ghee.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="demo.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="demo2.jpg" alt="Slide 3"></div>
+            <!-- <div class="slide"><img src="https://via.placeholder.com/800x300?text=Slide+4" alt="Slide 4"></div> -->
         </div>
+        
     </div>
-    <section class="SHOP">
+
+    <div class="dots">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        
+    </div>
+    <script src="home.js"></script>
+    <section class="SHOP" id="SHOP">
         <h2>SHOP NOW</h2>
+    <section class="button-container">
+        <button class="product-button" onclick="navigateToProduct('vegetables')">
+            <img src="vegetables.jpg" alt="Vegetables">
+            <span>VEGETABLES</span>
+        </button>
+        <button class="product-button" onclick="navigateToProduct('fruits')">
+            <img src="fruits.jpg" alt="Fruits">
+            <span>FRUITS</span>
+        </button>
+        <button class="product-button" onclick="navigateToProduct('pulses')">
+            <img src="pulses.jpg" alt="Pulses">
+            <span>PULSES</span>
+        </button>
+        <button class="product-button" onclick="navigateToProduct('dairy')">
+            <img src="dairy.jpg" alt="Dairy">
+            <span>DAIRY PRODUCT</span>
+        </button>
     </section>
+        
+    
     <section class="featured">
         <h2> TOP SALES</h2>
         <div class="product-container">
@@ -129,3 +170,4 @@
 
 </body>
 </html>
+

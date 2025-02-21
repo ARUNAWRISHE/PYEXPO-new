@@ -1,3 +1,7 @@
+function goBack() {
+    window.location.href = "home.html"; // Redirect to home page
+}
+
 function validateSignup(event) {
     event.preventDefault(); // Prevent default form submission
 
