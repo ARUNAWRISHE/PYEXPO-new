@@ -18,5 +18,5 @@ function goToProductPage(url) {
 }
 
 function buyAll() {
-    alert("Proceeding to checkout with total amount: $" + document.getElementById('total-price').textContent);
+    alert("Proceeding to checkout with total amount: rupees" + document.getElementById('total-price').textContent);
 }
