@@ -170,8 +170,13 @@ nav ul li a:hover {
     border: 2px solid white;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-}
 
+}
+.profile-icon img{
+    width: 100%;
+    height: 50px;
+    object-fit:contain;
+}
 .btn {
     background: #ff6b6b;
     padding: 8px 15px;

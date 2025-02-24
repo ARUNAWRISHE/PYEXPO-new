@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier's Market </title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
 
@@ -12,73 +12,80 @@
     <header>
         <div class="menu-icon" onclick="openMenu()">☰</div>
 
-                    <!-- Left Sidebar Menu -->
-            <div class="side-menu" id="sideMenu">
-                <span class="close-menu" onclick="closeMenu()">✖</span>
-                <a href="agro-ai.html">🌿 Agro-AI</a>
-                <a href="chat.html">💬 Real-time Chat</a>
-                <a href="farmers.html">🚜 Nearby Farmers Listing</a>
-        </div>
+    <!-- Left Sidebar Menu -->
+    <div class="side-menu" id="sideMenu">
+        <span class="close-menu" onclick="closeMenu()">✖</span>
+        <a href="/html/agro AI.html">🌿 Agro-AI</a>
+        <a href="/html/chat.html">💬 Real-time Chat</a>
+        <a href="/html/farmers.html">🚜 Nearby Farmers Listing</a>
+    </div>
+
+    <!-- Background overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+        
         <div class="logo">Xavier's Market</div>
             <nav class="navigate">
                 <ul>
 
                     <input type="text" id="search-input" placeholder="Search...">
                     <button onclick="search()">Search</button>
-                    <li><a href="consumerhome.html">Home</a></li>
+                    <li><a href="/html/home.html">Home</a></li>
                     <li><a href="#SHOP">Shop</a></li>
-                    <li><a href="frontpage.html">About US</a></li>
+                    <li><a href="/html/frontpage.html">About US</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li>
-                        <a href="profile.html">
-                            <img src="profile-icon.jpg" alt="Profile" class="profile-icon">
-                        </a>
-                    </li>
-                    <li><a href="login.html" onclick="loginUser()" class="btn login">Login/Sign Up</a></li>
-                    <li><a href="#" onclick="logoutUser()" class="btn logout">Logout</a></li>
+                    <li><a href="/html/product.html">Products</a></li>
+                    <li><a href="/html/cart.html">Cart</a></li>
+                    <li><a href="/html/profile.html" class="profile-icon"><img src="profile-icon.jpg" alt="Profile"></a></li>
+                    <li><a href="/html/login.html" class="btn login">Login/Sign Up</a></li>
+                    <li><a onclick="logoutUser()" class="btn logout" style="display: none;">Logout</a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
 
-    <script src="home.js"></script>
+    <script src="/js/home.js"></script>
+
+    <!-- Hero Section -->
+           
+    
     <section class="featured">
+        <h2> PRODUCTS</h2>
         <div class="product-container">
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="brinjal.jpg" alt="Product 1">
+                <img src="/image/brinjal.jpg" alt="Product 1">
                 <p>brinjal</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="carrot.jpg" alt="Product 2">
+                <img src="/image/carrot.jpg" alt="Product 2">
                 <p>carrot</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="cauliflower.jpg" alt="Product 3">
+                <img src="/image/cauliflower.jpg" alt="Product 3">
                 <p>cauliflower</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="lady's finger.jpg" alt="Product 4">
+                <img src="/image/lady's finger.jpg" alt="Product 4">
                 <p>lady finger</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="lemon.jpg" alt="Product 5">
+                <img src="/image/lemon.jpg" alt="Product 5">
                 <p>lemon</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="onion.jpg" alt="Product 6">
+                <img src="/image/onion.jpg" alt="Product 6">
                 <p>onion</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="pumkin.jpg" alt="Product 7">
+                <img src="/image/pumkin.jpg" alt="Product 7">
                 <p>pumkin</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="tomato .jpg" alt="Product 8">
+                <img src="/image/tomato .jpg" alt="Product 8">
                 <p>tomato</p>
             </div>
             <div class="product" data-farmer-url="farmer-details.html">
-                <img src="garlic.jpg" alt="Product 9">
+                <img src="/image/garlic.jpg" alt="Product 9">
                 <p>Garlic</p>
             </div>
         </div>
