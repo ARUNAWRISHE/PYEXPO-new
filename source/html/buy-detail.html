@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Placement - E-Shopping</title>
-    <link rel="stylesheet" href="/css/buy-detail.css">
+    <link rel="stylesheet" href="/source/css/buy-detail.css">
 </head>
 <body>
     <div class="container">
@@ -15,12 +15,7 @@
             <input type="text" id="city" placeholder="City" required>
             <input type="text" id="state" placeholder="State" required>
             <input type="tel" id="pin" placeholder="Pin Code" required>
-            <select id="product" required>
-                <option value="">Select Product</option>
-                <option value="Laptop" data-price="100000">Laptop - ₹100,000</option>
-                <option value="Mobile Phone" data-price="50000">Mobile Phone - ₹50,000</option>
-                <option value="Headphones" data-price="10000">Headphones - ₹10,000</option>
-            </select>
+           
             <input type="number" id="quantity" placeholder="Quantity" min="1" required>
             <p>Total Price: ₹<span id="totalPrice">0</span></p>
             <button type="submit">Place Order</button>
@@ -28,7 +23,7 @@
         <p id="confirmation"></p>
     </div>
 
-    <script src="/js/buy-detail.js">
+    <script src="/source/js/buy-detail.js">
        
     </script>
 </body>
